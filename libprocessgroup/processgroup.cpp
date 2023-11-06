@@ -269,7 +269,7 @@ static bool RemoveEmptyUidCgroups(const std::string& uid_path) {
     return empty;
 }
 
-void removeAllEmptyProcessGroups() {
+static void removeAllEmptyProcessGroups() {
     LOG(VERBOSE) << "removeAllEmptyProcessGroups()";
 
     std::vector<std::string> cgroups;
